@@ -1,0 +1,127 @@
+/* 
+body {
+    background-color: #d3e2f2;
+    
+}
+
+header {
+    z-index: 1;
+    text-align: center;
+    font-size: 48px;
+}
+
+ main {
+    z-index: 1;
+    text-align: left;
+    font-size: 48px;
+ }
+
+footer {
+    z-index: 1;
+    text-align: left;
+    font-size: 48px;
+}
+
+p {
+    z-index: match-parent;
+    text-align: match-parent;
+    font-size: 18px;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-content {
+    position: fixed;
+    top: 20%;
+    right: 10%; 
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+}
+
+.scrolling-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url('ramawoohGrad.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: -1; 
+} */
+
+body {
+    background-color: #d3e2f2;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 48px;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    font-size: 48px;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    font-size: 48px;
+}
+
+p {
+    text-align: match-parent;
+    font-size: 18px;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-content {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+    font-size: 2vw;
+
+    /* Adjust font size for different screen sizes */
+    @media (max-width: 768px) {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 16px; /* Adjust the font size for even smaller screens */
+    }
+}
+
+.scrolling-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url('ramawoohGrad.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: -1;
+}
